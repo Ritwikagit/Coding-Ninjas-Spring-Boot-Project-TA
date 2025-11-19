@@ -5,7 +5,7 @@ Video walkthrough::https://drive.google.com/drive/folders/15JzZ5nukucNOQJRaaN10w
 
 A complete freelance marketplace with skill-based smart matching (1.0 match score), bidding, client & freelancer dashboards.
 
-**College Project of the Year Level** — Fully Working | Beautiful UI | Production Ready Code
+
 
 ---
 
