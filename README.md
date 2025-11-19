@@ -44,7 +44,7 @@ freelance-marketplace/
 ### Setup & Run (5 Minutes)
 
 #### 1. Database (MySQL)
-```sql
+
 create the database for 3 microservice
 
 2. application.xml
