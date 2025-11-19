@@ -47,28 +47,30 @@ freelance-marketplace/
 
 create the database for 3 microservice
 
-2. application.xml
+#### 2. application.xml
 give the root password etc and change according to the microservice
 
-3. Run Services (Eclipse/IntelliJ)
+#### 3. Run Services (Eclipse/IntelliJ)
 
 Run AuthServiceApplication → http://localhost:8081
 Run ProjectServiceApplication → http://localhost:8082
 Run FreelancerServiceApplication → http://localhost:8083
 
 
-4. Frontend
-cd "path"
+#### 4. Frontend
+cd FreelanceProject - Frontend/FreelanceProject/client
 npm install
 npm run dev
 
 → Open http://localhost:5173
 
-Sample API Usage (Postman)
+#### Sample API Usage (Postman)
 
 
 STEP 1: Freelancer Register 
 POST http://localhost:8081/auth/register
+
+
 JSON
 {
   "name": "Ritwik Maity",
@@ -76,6 +78,8 @@ JSON
   "password": "123456",
   "role": "FREELANCER"
 }
+
+
 STEP 2: Freelancer Login 
 POST http://localhost:8081/auth/login
 JSON
@@ -85,6 +89,8 @@ JSON
 }
 → we have to copy the Token
 
+
+
 STEP 3: Create Freelancer Profile
 POST http://localhost:8083/api/freelancers/profile
 Authorization → Bearer Token → (STEP 2  token paste)
@@ -93,9 +99,12 @@ JSON
 {
   "experienceLevel": "SENIOR"
 }
+
+
 STEP 4: Add Skills
 POST http://localhost:8083/api/freelancers/skills
 Same token use 
+
 Body:
 JSON
 {
@@ -106,6 +115,8 @@ JSON
     { "name": "MySQL", "proficiencyLevel": 5 }
   ]
 }
+
+
 STEP 5: Client Register 
 POST http://localhost:8081/auth/register
 JSON
