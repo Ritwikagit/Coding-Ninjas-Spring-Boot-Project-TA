@@ -59,7 +59,9 @@ Run FreelancerServiceApplication → http://localhost:8083
 
 #### 4. Frontend
 cd FreelanceProject - Frontend/FreelanceProject/client
+
 npm install
+
 npm run dev
 
 → Open http://localhost:5173
